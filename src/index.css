@@ -1,3 +1,58 @@
-h1 {
-    color: aqua;
+/* estilo del cuerpo */
+
+body {
+  font-family: roboto;
+  background-color: #17223b;
+  color: aliceblue;
+}
+
+/* estilo para el contenido principal */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* estilo para las tarjetas */
+
+.box {
+  width: 700px;
+  height: 200px;
+  padding: 18px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+/* estilo para cada una de las tarjetas */
+
+.box.a {
+  background-color: #9575cd;
+}
+.box.b {
+  background-color: #673ab7;
+}
+.box.c {
+  background-color: #512da8;
+}
+
+/* estilo para el spiner */
+
+.spiner {
+  margin: 30px auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+  animation: spin 1s linear infinite;
+  border-bottom-color: #614ad3;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
